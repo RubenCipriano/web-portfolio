@@ -13,6 +13,14 @@ a, a:link, a:visited {
     min-height: 100vh;
 }
 
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
 html, body, * {
     margin: 0;
     padding: 0;
@@ -35,19 +43,9 @@ html, body, * {
     width: 100%;
     margin: 0;
 }
-.image-container > img {
-    border-radius: 100%;
-    background-color: white;
-    animation: InvertedRotate 1s infinite linear;
-}
 
-.image-container {
-    border-radius: 100%;
-    padding: 25px;
-    background: linear-gradient(90deg, rgba(71,68,227,1) 0%, rgba(94,92,231,1) 35%, rgba(117,115,234,1) 100%);
-    animation: rotate 1s infinite linear;
-    overflow: hidden;
-    height: fit-content;
+.image-container > img {
+    background-color: white;
 }
 
 .line-separator {
@@ -156,7 +154,13 @@ html, body, * {
 .button.inverted:hover {
     background-color: var(--secondary-color);
     color: #D9D9D9;
-    box-shadow: 0px 0px 15px 2px rgba(71, 68, 227, 0.2);
+    box-shadow: 0px 0px 15px 2px rgba(71, 68, 227, .5);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 @keyframes InvertedRotate {
@@ -235,6 +239,9 @@ html, body, * {
     * {
         text-align: center;
     }
+    .row {
+        margin-top: 5em;
+    }
 }
 
 @keyframes leftToRight {
@@ -254,7 +261,9 @@ html, body, * {
         opacity: 0;
         transform: translateY(100%);
     }
-
+    60% {
+        opacity: 0;
+    }
     100% {
         opacity: 1;
         transform: translateY(0%);
