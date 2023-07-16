@@ -5,23 +5,30 @@
     --font-secondary-color: #5F5F5F;
 }
 
+#cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
 a, a:link, a:visited {
     text-decoration: none;
 }
 
-.container {
+section {
     min-height: 100vh;
-}
-
-html{
-    min-height:100%;/* make sure it is at least as tall as the viewport */
-    position:relative;
-}
-body{
-    height:100%; /* force the BODY element to match the height of the HTML element */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 html, body, * {
+    cursor: none;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -32,11 +39,17 @@ html, body, * {
     height: auto;
 }
 
+.justify-content-space-arround {
+    justify-content: space-around;
+}
+
 .container {
     display: flex;
     width: 100%;
     align-items: center;
     z-index: 1;
+    min-height: 101vh;
+    flex-direction: column;
 }
 
 .row {
@@ -127,11 +140,6 @@ html, body, * {
     font-size: 20px;
 }
 
-.header-wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
 .buttons-section {
     margin-top: 15px;
     display: flex;
@@ -163,119 +171,74 @@ html, body, * {
     justify-content: flex-end;
 }
 
-@keyframes InvertedRotate {
-    0%
-   {
-     transform:rotate(360deg)
-   }
-    25%
-   {
-     transform:rotate(270deg)
-   }
-   50%
-   {
-     transform:rotate(180deg)
-   }
-    75%
-   {
-     transform:rotate(90deg)
-   }
-   100% {
-     transform:rotate(0deg)
-   }
+img {
+    width: 100%;
 }
 
-@keyframes rotate {
-    0%
-   {
-     transform:rotate(0deg)
-   }
-    25%
-   {
-     transform:rotate(90deg)
-   }
-   50%
-   {
-     transform:rotate(180deg)
-   }
-    75%
-   {
-     transform:rotate(270deg)
-   }
-   100% {
-     transform:rotate(360deg)
-   }
+.skill-card > img {
+    width: 100px;
+    height: auto;
 }
 
-@media (max-width: 991px) {
-    .small-screen-hide {
-        display: none;
-    }
-
-    .image-container {
-        animation: none;
-    }
-
-    .image-container > img{
-        animation: none;
-    }
-
-    .header-wrapper {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-
-    .buttons-section {
-        margin-top: 25px;
-        gap: 15px;
-        margin-bottom: 25px;
-    }
-
-    .image-wrapper {
-        margin-top: 30px;
-        padding: 50px;
-    }
-
-    * {
-        text-align: center;
-    }
-    .row {
-        margin-top: 5em;
-    }
+.skill-card:hover > .skill-card-content {
+    opacity: 1;
 }
 
-@keyframes leftToRight {
-    0% {
-        opacity: 0;
-        transform: translateX(-200%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0%);
-    }
+.skill-card {
+    height: 100%;
+    padding: 30px;
+    background-color: #2C2C2C;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 
-@keyframes bottomToTop {
-    0% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    60% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
+.skill-card-content {
+    transition: all 250ms;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, .98);
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
 }
 
-@keyframes appearAnimation {
-    0% {
-        opacity: 0;
-    }
+.container-fluid {
+    overflow: hidden;
+}
 
-    100% {
-        opacity: 1;
-    }
-} 
+strong {
+    margin: 0;
+}
+
+.text-primary-color {
+    color: var(--secondary-color);
+}
+
+.skill-card.inverted {
+    background-color: white;
+}
+
+.scroll-hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s;
+}
+
+.scroll-hidden.show {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -2,9 +2,12 @@
 <html lang="en">
     <head>
         <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./src/css/background.css">
         <link rel="stylesheet" href="./src/css/style.css">
         <link rel="stylesheet" href="./src/css/animation.css">
+        <link rel="stylesheet" href="./src/css/media.css">
         <script src="./src/js/bootstrap.bundle.js"></script>
         <script src="./src/js/bootstrap.min.js"></script>
         <link rel="icon" type="image/x-icon" href="./src/images/favico.svg">
@@ -12,6 +15,7 @@
         <title>Ruben Cipriano</title>
     </head>
     <body>
+        <div id="cursor"></div>
         <div class="circles">
             <div></div>
             <div></div>
@@ -25,7 +29,7 @@
             <div></div>
         </div>
         <div class="container">
-            <div class="row header-wrapper">
+            <section class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 header-content">
                     <div class="row d-flex align-items-center left-to-right-animation mb-3">
                         <div class="col-lg-3 small-screen-hide">
@@ -74,7 +78,118 @@
                         </div>
                     </div>
                 </div>
+            </section>
+        </div>
+        <div class="container-fluid bg-dark"> 
+            <div class="container justify-content-space-arround">
+                <div class="row mt-5">
+                    <div class="col-lg-12">
+                        <h1 class="header-title text-white text-center mt-10 scroll-hidden">SKILLS</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 scroll-hidden">
+                        <div class="skill-card inverted">
+                            <img src="./src/images/c-sharp-logo.png">
+                            <h2 class="mt-4">C Sharp</h2>
+                            <div class="skill-card-content">
+                                <p>.NET and EF6 frameworks</p>
+                                
+                                <strong class="text-primary-color">
+                                    <i class="fa-solid fa-certificate"></i> 
+                                    Linkedin Cetified
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 scroll-hidden">
+                        <div class="skill-card inverted">
+                            <img src="./src/images/java-logo.png">
+                            <h2 class="mt-4">Java</h2>
+                            <div class="skill-card-content">
+                                <p>I may be Java-novice, but my code packs a byte</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 scroll-hidden">
+                        <div class="skill-card inverted">
+                            <img src="./src/images/javascript-logo.png">
+                            <h2 class="mt-4">Javascript</h2>
+                            <div class="skill-card-content">
+                                <p>ES6 and Node.js specialties</p>
+                                
+                                <strong class="text-primary-color">
+                                    <i class="fa-solid fa-certificate"></i> 
+                                    Linkedin Cetified
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 scroll-hidden">
+                        <div class="skill-card inverted">
+                            <img src="./src/images/typescript-logo.png">
+                            <h2 class="mt-4">Typescript</h2>
+                            <div class="skill-card-content">
+                                <p>Angular specialty</p>
+                                
+                                <strong class="text-primary-color scroll-hidden">
+                                    <i class="fa-solid fa-certificate"></i> 
+                                    Linkedin Cetified <br /> (Angular Framework)
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 scroll-hidden">
+                        <div class="skill-card inverted">
+                            <img src="./src/images/html-logo.png">
+                            <h2 class="mt-4">HTML</h2>
+                            <div class="skill-card-content">
+                                <p>For structuring websites</p>
+                                
+                                <strong class="text-primary-color">
+                                    <i class="fa-solid fa-certificate"></i> 
+                                    Linkedin Cetified
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 scroll-hidden">
+                        <div class="skill-card inverted">
+                            <img src="./src/images/css-logo.png">
+                            <h2 class="mt-4">CSS</h2>
+                            <div class="skill-card-content">
+                                <p>For making the websites pretty...awfull 🤣</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 scroll-hidden">
+                        <div class="skill-card inverted">
+                            <img src="./src/images/sass-logo.png">
+                            <h2 class="mt-4">SASS</h2>
+                            <div class="skill-card-content">
+                                <p>For making websites even awfull 🤣</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 mt-5 scroll-hidden">
+                        <div class="skill-card inverted">
+                            <img src="./src/images/angular-logo.png">
+                            <h2 class="mt-4">Angular</h2>
+                            <div class="skill-card-content">
+                                <p>Combining HTML + SASS + Typescript</p>
+                                
+                                <strong class="text-primary-color">
+                                    <i class="fa-solid fa-certificate"></i> 
+                                    Linkedin Cetified
+                                </strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <script src="./src/js/cursor.js"></script>
+        <script src="./src/js/intesect.js"></script>
     </body>
 </html>
