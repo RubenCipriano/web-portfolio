@@ -47,9 +47,10 @@ html, body, * {
     display: flex;
     width: 100%;
     align-items: center;
-    z-index: 1;
-    min-height: 101vh;
+    z-index: 2;
+    min-height: 100vh;
     flex-direction: column;
+    position: relative;
 }
 
 .row {
@@ -214,6 +215,10 @@ img {
     font-size: 20px;
     text-align: center;
     flex-direction: column;
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
 }
 
 .container-fluid {
