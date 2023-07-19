@@ -1,6 +1,18 @@
 @media (max-width: 991px) {
+    .circles {
+        display: none;
+    }
     .small-screen-hide {
         display: none;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.inverted {
+        flex-direction: column-reverse;
     }
 
     .image-container {
@@ -9,6 +21,8 @@
 
     .image-container > img{
         animation: none;
+        margin-top: 30px;
+        padding: 50px;
     }
 
     .header-wrapper {
@@ -22,16 +36,8 @@
         margin-bottom: 25px;
     }
 
-    .image-wrapper {
-        margin-top: 30px;
-        padding: 50px;
-    }
-
     * {
         text-align: center;
-    }
-    .row {
-        margin-top: 5em;
     }
 
     #cursor {
