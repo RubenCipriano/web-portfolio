@@ -10,6 +10,22 @@
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .header-title {
+        font-size: 32px !important;
+    }
+    .header-subtitle {
+        font-size: 12px !important;
+    }
+    .button {
+        font-size: 17px !important;
+    }
+
+    .small-screen-hide {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .circles {
         display: none;
