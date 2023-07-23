@@ -1,10 +1,10 @@
-@media (max-width: 1337px) {
+@media screen and (max-width: 1337px) {
     .header-title {
         font-size: 48px;
     }
-} 
+}
 
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     .circles {
         display: none;
     }
@@ -45,6 +45,7 @@
     * {
         text-align: center;
     }
+}
 
     #cursor {
         display: none;
