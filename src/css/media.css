@@ -1,12 +1,12 @@
 @media screen and (max-width: 1400px) {
     .header-title {
-        font-size: 42px;
+        font-size: 42px !important;
     }
     .header-subtitle {
-        font-size: 15px;
+        font-size: 15px !important;
     }
     .button {
-        font-size: 17px;
+        font-size: 17px !important;
     }
 }
 
@@ -51,8 +51,7 @@
     * {
         text-align: center;
     }
-}
-
+    
     #cursor {
         display: none;
     }
