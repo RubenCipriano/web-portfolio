@@ -1,3 +1,9 @@
+@media (max-width: 1335px) {
+    .header-title {
+        font-size: 48px;
+    }
+} 
+
 @media (max-width: 991px) {
     .circles {
         display: none;
