@@ -91,6 +91,7 @@ html, body, * {
 .status-text {
     width: 100%;
     text-align: center;
+    margin: 0;
 }
 
 .header-title {
