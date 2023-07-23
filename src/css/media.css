@@ -8,6 +8,10 @@
     .button {
         font-size: 17px !important;
     }
+
+    .skill-card-content {
+        font-size: 16px !important;
+    }
 }
 
 @media screen and (max-width: 1200px) {
