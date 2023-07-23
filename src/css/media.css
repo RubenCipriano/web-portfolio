@@ -24,6 +24,15 @@
     .small-screen-hide {
         display: none;
     }
+
+    h6 {
+        font-size: 0.8em;
+    }
+
+    .status-icon {
+        width: 10px !important;
+        height: 10px !important;
+    }
 }
 
 @media screen and (max-width: 991px) {
