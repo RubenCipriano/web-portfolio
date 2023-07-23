@@ -2,6 +2,9 @@
     .header-title {
         font-size: 42px;
     }
+    .header-subtitle {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 991px) {
