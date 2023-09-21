@@ -1,4 +1,8 @@
 @media (max-width: 991px) {
+    * {
+        cursor: default;
+    }
+
     .circles {
         display: none;
     }
