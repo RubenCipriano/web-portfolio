@@ -1,8 +1,57 @@
+<<<<<<< HEAD
 @media (max-width: 991px) {
     * {
         cursor: default;
     }
 
+=======
+@media screen and (max-width: 1400px) {
+    .header-title {
+        font-size: 42px !important;
+    }
+    .header-subtitle {
+        font-size: 15px !important;
+    }
+    .button {
+        font-size: 17px !important;
+    }
+
+    .skill-card-content {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .header-title {
+        font-size: 32px !important;
+    }
+    .header-subtitle {
+        font-size: 12px !important;
+    }
+    .button {
+        font-size: 17px !important;
+    }
+
+    .small-screen-hide {
+        display: none;
+    }
+
+    h6 {
+        font-size: 0.8em;
+    }
+
+    .status-icon {
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .skill-card-content {
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+>>>>>>> ea35ec03d8923a988a7c2eca1a55bfc52248daa4
     .circles {
         display: none;
     }
@@ -43,7 +92,7 @@
     * {
         text-align: center;
     }
-
+    
     #cursor {
         display: none;
     }
