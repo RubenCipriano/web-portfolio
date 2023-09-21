@@ -14,72 +14,88 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ruben Cipriano</title>
     </head>
-    <body>
+    <body class="light">
         <div id="cursor"></div>
-        <div class="circles">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+
+        <div class="navbar-custom">
+            <select class="select-language" onchange="changeLanguange(this.value)">
+                <option value="EN" selected>EN</option>
+                <option value="PT">PT</option>
+            </select>
+            <button class="dark-light-switch" onclick="changeColor(this)">
+                <i class="fa-solid fa-sun"></i>                
+                <i class="fa-solid fa-moon hidden"></i>
+            </button>
         </div>
-        <div class="container">
-            <section class="row inverted">
-                <div class="col-lg-6 col-md-12 col-sm-12 header-content">
-                    <div class="row d-flex align-items-center left-to-right-animation mb-3">
-                        <div class="col-lg-3 small-screen-hide">
-                            <div class="line-separator"></div>
+
+        <div class="container-fluid">
+            <div class="circles">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div> 
+    
+            <div class="container">
+                <section class="row inverted">
+                    <div class="col-lg-6 col-md-12 col-sm-12 header-content">
+                        <div class="row d-flex align-items-center left-to-right-animation mb-3">
+                            <div class="col-lg-3 small-screen-hide">
+                                <div class="line-separator"></div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <div class="status-container">
+                                    <div class="status-icon"></div>
+                                    <h6 class="status-text">
+                                        status: employed
+                                    </h6>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12">
-                            <div class="status-container">
-                                <div class="status-icon"></div>
-                                <h6 class="status-text">
-                                    status: employed
-                                </h6>
+                        <div class="row left-to-right-animation">
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                                <h1 class="header-title">
+                                    im rúben cipriano, <br>
+                                    a <span>software developer</span>
+                                </h1>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                                <h2 class="header-subtitle">
+                                    I'm a motivated and passionate professional in the technology industry. <br><br>
+                                    My expertise includes C, C#, Java and JavaScript programming languages, on top of that I've already gained some experience with JavaScript, TypeScript, C# and Java Frameworks in both back and front end development. 
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="row buttons-section mt-5">
+                            <div class="col-lg-6 col-md-12 col-sm-12 d-flex">
+                                <a class="button github-button" href="https://github.com/RubenCipriano" target="_blank">
+                                    GITHUB
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12 d-flex">
+                                <a class="button inverted talk-to-me-button" href="https://www.linkedin.com/in/r%C3%BAben-cipriano-109508197/" target="_blank">
+                                    TALK TO ME
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="row left-to-right-animation">
-                        <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
-                            <h1 class="header-title">
-                                im rúben cipriano, <br>
-                                a <span>software developer</span>
-                            </h1>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 mt-3">
-                            <h2 class="header-subtitle">
-                                I'm a motivated and passionate professional in the technology industry. <br><br>
-                                My expertise includes C, C#, Java and JavaScript programming languages, on top of that I've already gained some experience with JavaScript, TypeScript, C# and Java Frameworks in both back and front end development. 
-                            </h2>
+                    <div class="col-lg-6 col-md-12 col-sm-12 image-wrapper mb-3">
+                        <div class="col-lg-8 col-sm-12 col-md-12">
+                            <div class="image-container">
+                                <img alt="profile-pic" class="profile-pic" src="./src/images/my-profile-pic-edited.png">
+                            </div>
                         </div>
                     </div>
-                    <div class="row buttons-section mt-5">
-                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex">
-                            <a class="button github-button" href="https://github.com/RubenCipriano" target="_blank">
-                                GITHUB
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 d-flex">
-                            <a class="button inverted talk-to-me-button" href="https://www.linkedin.com/in/r%C3%BAben-cipriano-109508197/" target="_blank">
-                                TALK TO ME
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 image-wrapper mb-3">
-                    <div class="col-lg-8 col-sm-12 col-md-12">
-                        <div class="image-container">
-                            <img alt="profile-pic" class="profile-pic" src="./src/images/my-profile-pic-edited.png">
-                        </div>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
+
         <div class="container-fluid bg-dark"> 
             <div class="container justify-content-space-arround mt-2">
                 <div class="row mt-5">
@@ -191,5 +207,7 @@
         </div>
         <script src="./src/js/cursor.js"></script>
         <script src="./src/js/intesect.js"></script>
+        <script src="./src/js/changeColor.js"></script>
+        <script src="./src/js/changeLanguage.js"></script>
     </body>
 </html>

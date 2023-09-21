@@ -1,8 +1,25 @@
 :root {
     --primary-color: #4744E3;
+
     --secondary-color: #5E5CE7;
+
     --font-primary-color: #2C2C2C;
+
     --font-secondary-color: #5F5F5F;
+
+    --background-color: white;
+
+    --secondary-background: #E5E5E5;
+
+    --status-icon: #43B581;
+}
+
+* {
+    cursor: none;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 #cursor {
@@ -59,20 +76,20 @@ html, body, * {
 }
 
 .image-container > img {
-    background-color: white;
+    background-color: transparent;
 }
 
 .line-separator {
     width: 100%;
     padding: 5px;
-    background-color: #4744E3;
+    background-color: var(--primary-color);
 }
 
 .status-container {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #E5E5E5;
+    background-color: var(--secondary-background);
     border-radius: 25px;
     padding: 10px;
     position: relative;
@@ -84,7 +101,7 @@ html, body, * {
     height: 12px;
     position: absolute;
     border-radius: 100%;
-    background-color: #43B581;
+    background-color: var(--status-icon);
     left: 10%;
 }
 
@@ -121,7 +138,7 @@ html, body, * {
     padding: 30px;
     width: 100%;
     border-radius: 15px;
-    background-color: #D9D9D9;
+    background-color: var(--secondary-background);
     text-align: center;
     color: #2C2C2C;
     font-weight: 900;
@@ -195,6 +212,7 @@ img {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    color: var(--font-primary-color);
 }
 
 .skill-card-content {
@@ -222,6 +240,7 @@ img {
 }
 
 .container-fluid {
+    position: relative;
     overflow: hidden;
 }
 
@@ -234,7 +253,7 @@ strong {
 }
 
 .skill-card.inverted {
-    background-color: white;
+    background-color: var(--background-color);
 }
 
 .scroll-hidden {
@@ -246,4 +265,55 @@ strong {
 .scroll-hidden.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.navbar-custom {
+    position: relative;
+    padding-top: 10px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 0;
+    background-color: transparent;
+}
+
+.dark-light-switch {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-background);
+    justify-content: center;
+    border: none;
+}
+
+.dark-light-switch > i {
+    font-size: 20px;
+    color: var(--font-secondary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.select-language {
+    margin-right: 20px;
+    border: none;
+    color: var(--font-primary-color);
+    background-color: transparent
+}
+
+
+option {
+    color: var(--font-primary-color) !important;
+    background-color: var(--background-color)
+}
+
+.select-language:focus {
+    border: none !important;
+    box-shadow: none;
+    outline: none;
 }
