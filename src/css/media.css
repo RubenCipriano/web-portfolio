@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 1400px) {
     .header-title {
-        font-size: 62px !important;
+        font-size: 42px !important;
     }
     .header-subtitle {
         font-size: 18px !important;
@@ -16,19 +16,19 @@
     }
 
     .skill-card-content {
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .header-title {
-        font-size: 32px !important;
+        font-size: 52px !important;
     }
     .header-subtitle {
-        font-size: 12px !important;
+        font-size: 18px !important;
     }
     .button {
-        font-size: 17px !important;
+        font-size: 18px !important;
     }
 
     .small-screen-hide {
@@ -45,7 +45,7 @@
     }
 
     .skill-card-content {
-        font-size: 14px !important;
+        font-size: 18px !important;
     }
 }
 
