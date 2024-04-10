@@ -26,17 +26,21 @@
 }
 
 @media screen and (max-width: 1200px) {
+    
+    .box-primary {
+        padding: 2px;
+    }
+
     .education-chronologic > .left {
         left: 0;
         left: 150px;
     }
 
-    .education-chronologic > .left::after {
-        top: 5px;
-        left: -7px;
+    .left::after, .right::after {
+        display: none;
     }
     .education-chronologic > .left > .timeline-circle {
-        right: 225px !important;
+        right: 225px;
         left: auto;
     }
 
@@ -45,9 +49,7 @@
     }
 
     .professional-chronologic > .right::after {
-        top: 5px;
-        right: -7px;
-        left: auto;
+        display: none;
     }
     .professional-chronologic > .right > .timeline-circle {
         left: 113%;
@@ -86,35 +88,32 @@
 }
 
 @media screen and (max-width: 991px) {
+
+    .card {
+        width: 80% !important;
+    }
+
+    .box-primary {
+        padding: 2px;
+    }
+
+    .line {
+        display: none;
+    }
+
     .left {
-        left: -150px !important;
-    }
-
-    .left .timeline-circle {
-        left: 113% !important;
-        right: auto !important; 
-    }
-     
-    .right .timeline-circle {
-        right: 225px !important;
         left: auto !important;
-    }
-
-    .left::after {
-        top: 5px !important;
-        right: -7px !important;
-        left: auto !important;
-    }
-     
-    .right::after {
-        top: 5px !important;
-        left: -7px !important;
-        right: auto !important;
     }
 
     .right {
         position: relative !important;
-        left: 150px !important;
+        left: auto !important;
+    }
+
+    .timeline-circle {
+        right: auto !important;
+        top: -20px !important;
+        left: -30px !important;
     }
 
     .gap-5-line {
