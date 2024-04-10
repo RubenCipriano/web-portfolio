@@ -1,0 +1,12 @@
+.scroll-hidden {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+* {
+    cursor: default;
+}
+
+#cursor {
+    display: none;
+}
