@@ -5,6 +5,19 @@ var languageValues = [
     {"property": "button inverted talk-to-me-button", "EN": "TALK TO ME", "PT": "FALA COMIGO"}
 ]
 
+var professionalExperienceArray = [
+    {"property": "professional-experience-text", "EN":"Worked has a full stack developer making backend, frontend and helping the mobile team using Xamarin.","PT":"Trabalhou como desenvolvedor full stack, lidando com o backend, frontend e ajudando a equipa móvel usando Xamarin."},
+    {"property": "professional-experience-text", "EN":"Worked has a frontend developer, fixing bugs and implementing new features in a Atomic Design using Angular.","PT":"Trabalhou como desenvolvedor frontend, corrigindo bugs e implementando novas funcionalidades num Design Atómico usando Angular."},
+    {"property":"professional-experience-text", "EN":"Working has a Backend developer using C# and Java has main programming languages","PT":"Trabalhou como desenvolvedor de backend utilizando C# e Java como principais linguagens de programação."}
+]
+
+var educationArray = [
+    {"property": "education-text", "EN":"Vocational School where I learn a lot about the fundamentals about programming languages and how to create some performance apps using C and C#","PT":"Escola Profissional onde aprendi muito sobre os fundamentos das linguagens de programação e como criar algumas aplicações de alto desempenho utilizando C e C#."},
+    {"property": "education-text", "EN":"Superior Education Institute persued CTeSP course for creating better looking websites, I learn a lot about structuring and design patterns for better looking websites.","PT":"Instituto de Ensino Superior onde cursei o curso CTeSP para criar websites mais atrativos, aprendi muito sobre estruturação e padrões de design para websites mais atraentes."},
+    {"property": "education-text", "EN":"Students learn advanced programming and mathematics concepts at the Superior Institute of Engineering to improve their logic and problem-solving skills.","PT":"Os alunos aprendem conceitos avançados de programação e matemática no Instituto Superior de Engenharia para melhorar suas habilidades lógicas e de resolução de problemas."}
+]
+
+
 
 function changeLanguange(lng) { 
 
@@ -12,6 +25,20 @@ function changeLanguange(lng) {
 
         var element = document.getElementsByClassName(language.property)[0];
 
+
+        element.innerHTML = language[lng];
+    })
+
+    professionalExperienceArray.forEach((language, index) => {
+
+        var element = document.getElementsByClassName(language.property)[index];
+
+        element.innerHTML = language[lng];
+    })
+
+    educationArray.forEach((language, index) => {
+
+        var element = document.getElementsByClassName(language.property)[index];
 
         element.innerHTML = language[lng];
     })

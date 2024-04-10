@@ -5,6 +5,11 @@
 }
 
 @media screen and (max-width: 1400px) {
+    .gap-5-line > * {
+        padding-bottom: 5em;
+        gap: 5em;
+        border-bottom: 5px solid var(--secondary-color);
+    }
     .header-title {
         font-size: 42px !important;
     }
@@ -21,6 +26,37 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .education-chronologic > .left {
+        left: 0;
+        left: 150px;
+    }
+
+    .education-chronologic > .left::after {
+        top: 5px;
+        left: -7px;
+    }
+    .education-chronologic > .left > .timeline-circle {
+        right: 225px !important;
+        left: auto;
+    }
+
+    .professional-chronologic > .right {
+        left: -150px;
+    }
+
+    .professional-chronologic > .right::after {
+        top: 5px;
+        right: -7px;
+        left: auto;
+    }
+    .professional-chronologic > .right > .timeline-circle {
+        left: 113%;
+        right: auto;
+    }
+    
+    .card {
+        font-size: .8em !important;
+    }
     .header-title {
         font-size: 52px !important;
     }
@@ -50,6 +86,49 @@
 }
 
 @media screen and (max-width: 991px) {
+    .left {
+        left: -150px !important;
+    }
+
+    .left .timeline-circle {
+        left: 113% !important;
+        right: auto !important; 
+    }
+     
+    .right .timeline-circle {
+        right: 225px !important;
+        left: auto !important;
+    }
+
+    .left::after {
+        top: 5px !important;
+        right: -7px !important;
+        left: auto !important;
+    }
+     
+    .right::after {
+        top: 5px !important;
+        left: -7px !important;
+        right: auto !important;
+    }
+
+    .right {
+        position: relative !important;
+        left: 150px !important;
+    }
+
+    .gap-5-line {
+        gap: 5em;
+    }
+
+    .gap-5-line > * {
+        padding-bottom: 5em;
+        border-bottom: 5px solid var(--secondary-color);
+    }
+
+    .mb-10 {
+        margin-bottom: 1em;
+    }
     .circles {
         display: none;
     }
@@ -60,10 +139,12 @@
     section {
         display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     section.inverted {
         flex-direction: column-reverse;
+        flex-wrap: nowrap;
     }
 
     .image-container {
@@ -79,6 +160,7 @@
     .header-wrapper {
         display: flex;
         flex-direction: column-reverse;
+        flex-wrap: nowrap;
     }
 
     .buttons-section {

@@ -1,16 +1,10 @@
 :root {
     --primary-color: #4744E3;
-
     --secondary-color: #5E5CE7;
-
     --font-primary-color: #2C2C2C;
-
     --font-secondary-color: #5F5F5F;
-
     --background-color: white;
-
     --secondary-background: #E5E5E5;
-
     --status-icon: #43B581;
 }
 
@@ -272,12 +266,13 @@ strong {
 .navbar-custom {
     position: relative;
     padding-top: 10px;
+    padding-bottom: 10px;
     padding: 20px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 0;
-    background-color: transparent;
+    background-color: var(--background-color);
+    z-index: 999;
 }
 
 .dark-light-switch {
@@ -318,4 +313,31 @@ option {
     border: none !important;
     box-shadow: none;
     outline: none;
+}
+
+.box-primary {
+    padding: 10px;
+    background-color: var(--primary-color) !important;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.text-weight-700 {
+    font-weight: 700;
+}
+
+.left {
+    position: relative;
+    left: -150px;
+}
+
+.h-50 {
+    height: 50% !important;
+    min-height: 50% !important;
+}
+
+.mb-10 {
+    margin-bottom: 3em;
 }
